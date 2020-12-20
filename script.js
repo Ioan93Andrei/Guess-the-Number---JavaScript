@@ -9,7 +9,7 @@ const guessSubmit = document.querySelector(".guessSubmit");
 
 let guessCount = 1;
 let resetButton;
-guessField.focus();
+guessField.focus()
 
 function checkGuess(){
   let userGuess = Number(guessField.value);
@@ -23,7 +23,8 @@ function setGameOver() {
     guessSubmit.disabled = true;
     resetButton = document.createElement('button');
     resetButton.textContent = 'Start new game';
-    document.body.append(resetButton);
+    divContainer = document.getElementsByClassName("container")[0]
+    divContainer.append(resetButton);
     resetButton.addEventListener('click', resetGame);
   }
   

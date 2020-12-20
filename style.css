@@ -1,15 +1,51 @@
 html {
-    font-family: sans-serif;
+    font-family: "Fira Sans", sans-serif;
   }
 
 body{
     width: 100%;
-    max-width: 800px;
-    min-width: 480px;
+    height: 90vh;
     margin: 0 auto;
-}
+    background: rgb(238,174,202);
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%); 
+} 
 
 .lastResult {
     color: white;
     padding: 3px;
+}
+
+.container {
+    width: 50% !important;
+    height: 80%;
+    margin-top: 5%;
+    box-shadow: 7px -5px 16px -2px rgba(255,186,0,0.79);
+    border-radius: 5px;
+    background: rgb(255,186,0);
+    background: radial-gradient(circle, rgba(255,186,0,1) 0%, rgba(255,144,144,1) 100%); 
+}
+
+h1, p, label{
+    color: white;
+    text-shadow: 1px 1px 2px black;
+    font-family: "Fira Sans";
+    padding-bottom: 20px;
+    font-weight: bold;
+    font-size: large;
+}
+
+#main_header{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#submit_button{
+    background-color: rgb(255,186,0);
+    color: white;
+    text-shadow: 1px 1px 2px black;
+    font-weight: bold;
+    font-size: large;
+    border: 3px solid white;
+    border-radius: 5px;
+    width: 150px;
 }
