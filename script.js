@@ -3,6 +3,7 @@ let randomNumber = Math.floor(Math.random() * 100) + 1;
 const guesses = document.querySelector(".guesses");
 const lastResult = document.querySelector(".lastResult");
 const lowOrHi = document.querySelector(".lowOrHi");
+const lives = document.querySelector(".lives");
 
 const guessField = document.querySelector(".guessField");
 const guessSubmit = document.querySelector(".guessSubmit");
@@ -43,7 +44,7 @@ function resetGame() {
   guessField.value = '';
   guessField.focus();
   
-  lastResult.style.backgroundColor = 'white';
+  lastResult.style.backgroundColor = 'rgba(255,186,0, 0)';
   
   randomNumber = Math.floor(Math.random() * 100) + 1;
 }
