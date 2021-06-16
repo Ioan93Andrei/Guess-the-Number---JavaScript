@@ -49,7 +49,7 @@ function resetGame() {
 }
 
 if(userGuess === randomNumber){
-  lastResult.textContent = "Congratulations! You got it right.";
+  lastResult.textContent = "Congratulations! The correct number was " + randomNumber + "!";
   lastResult.style.backgroundColor = "green";
   lowOrHi.textContent = " ";
   setGameOver();
